@@ -1,0 +1,132 @@
+body {
+  background: url(https://thumb.ac-illust.com/02/02f3f852d7966175d8a9c5de157cdacb_t.jpeg);
+}
+
+#title {
+  margin: 10px;
+  text-align: center;
+  color: antiquewhite;
+}
+
+#controller {
+  position: fixed;
+  top: 44rem;
+  right: 2rem;
+}
+
+#controllerr {
+  position: fixed;
+  top: 40rem;
+  right: 2rem;
+}
+
+#board {
+  margin: 3rem auto;
+  margin-top: 8rem;
+  width: 40rem;
+  height: 40rem;
+  background-color: black;
+  outline: 1.5rem solid;
+  outline-color: black;
+}
+
+.toast-message {
+  font-size: 24px; 
+}
+
+.container {
+  font-size: 0;
+}
+
+.square {
+  width: 5rem;
+  height: 5rem;
+  box-shadow: none;
+  background-color: green;
+  font-size: 3rem;
+  vertical-align: top;
+  padding: 0;
+}
+
+.square[date-owner="black"] {
+  color: #000 !important;
+}
+
+.square[data-owner="white"] {
+  color: #fff;
+}
+
+.can-select-color {
+  background-color: rgb(26, 103, 82) !important;
+}
+
+.setting {
+  margin: 120px 20px 10px 20px;
+  padding: 1px;
+  background-color: rgb(236, 170, 37);
+}
+
+.setting_2 {
+  margin: 40px 20px 30px 20px;
+  padding: 1px;
+  background-color: rgb(236, 170, 37);
+}
+
+
+.set {
+  font-size: 20px;
+  margin: 2px 0px 0px 2rem;
+}
+
+/* トグルスイッチのスタイル */
+.toggle-button {
+  display: inline-block;
+  position: relative;
+  width: 50px;
+  height: 25px;
+  border-radius: 50px;
+  background-color: #dddddd;
+  cursor: pointer;
+  transition: background-color 0.4s;
+  margin-right: 10px; /* テキストとの間にスペースを追加 */
+}
+
+.toggle-button input {
+  display: none; /* チェックボックス自体は非表示 */
+}
+
+.toggle-button:has(:checked) {
+  background-color: #4bd865;
+}
+
+.toggle-button::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgb(0 0 0 / 20%);
+  background-color: #fff;
+  content: '';
+  transition: left 0.4s;
+}
+
+.toggle-button:has(:checked)::after {
+  left: 25px;
+}
+
+.toggle-container {
+  display: flex;
+  align-items: center;
+  margin: 30px;
+}
+
+.now {
+  border: 1px solid;
+  border-color: red;
+}
+
+.vsout {
+  display: none;
+}
